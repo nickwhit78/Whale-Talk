@@ -1,0 +1,27 @@
+var input = 'coding is fun but can be challenging';
+const vowels = ['a','e','i','o','u'];
+var resultArray = [];
+//outerloop
+for (let i = 0; i < input.length; i ++){
+  if(input[i] === 'e'){
+    resultArray.push(input[i]);
+  }
+  if(input[i] === 'u'){
+    resultArray.push(input[i]);
+  }
+//console.log(i);
+  //inner loop
+  for(let j = 0; j <vowels.length; j++){
+    //console.log(j);
+  if(input[i] === vowels[j]){
+    //console.log(input[i]);
+    resultArray.push(input[i]);
+    //console.log(resultArray);
+  }
+  
+  }
+};
+//console.log(resultArray)
+var resultString = resultArray.join('');
+
+console.log(resultString.toUpperCase());
